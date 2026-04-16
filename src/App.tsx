@@ -68,10 +68,10 @@ class App extends React.Component<{}, State> {
             onChange={event => this.setState({ step: event.target.value })}
           />
 
-          <label htmlFor="animationDurationId">Animation Duration</label>
+          <label htmlFor="fnimationDurationId">Fnimation Duration</label>
 
           <input
-            id="animationDurationId"
+            id="fnimationDurationId"
             type="number"
             value={this.state.animationDuration}
             onChange={event =>

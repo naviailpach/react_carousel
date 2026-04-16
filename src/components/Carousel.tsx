@@ -70,15 +70,15 @@ const Carousel: React.FC<Props> = ({
             transition: `${animationDuration}ms ease-in-out`,
           }}
         >
-          {images.map((image, index) => (
+          {images.map(image => (
             <li
-              key={index}
+              key={image}
               style={{
                 width: `${itemWidth}px`,
                 height: `${itemWidth}px`,
               }}
             >
-              <img src={image} alt={`img-${index}`} />
+              <img src={image} alt={`img-${image}`} />
             </li>
           ))}
         </ul>
