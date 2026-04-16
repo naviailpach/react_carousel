@@ -46,7 +46,7 @@ class App extends React.Component<{}, State> {
           <input
             id="itemId"
             type="number"
-            value={this.state.itemWidth}
+            value={itemWidth}
             onChange={event => this.setState({ itemWidth: event.target.value })}
           />
 
@@ -55,7 +55,7 @@ class App extends React.Component<{}, State> {
           <input
             id="frameId"
             type="number"
-            value={this.state.frameSize}
+            value={frameSize}
             onChange={event => this.setState({ frameSize: event.target.value })}
           />
 
@@ -64,16 +64,16 @@ class App extends React.Component<{}, State> {
           <input
             id="stepId"
             type="number"
-            value={this.state.step}
+            value={step}
             onChange={event => this.setState({ step: event.target.value })}
           />
 
-          <label htmlFor="fnimationDurationId">Fnimation Duration</label>
+          <label htmlFor="fnimationDurationId">fnimationDuration</label>
 
           <input
             id="fnimationDurationId"
             type="number"
-            value={this.state.animationDuration}
+            value={animationDuration}
             onChange={event =>
               this.setState({ animationDuration: event.target.value })
             }
