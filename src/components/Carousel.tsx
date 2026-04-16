@@ -47,7 +47,7 @@ const Carousel: React.FC<Props> = ({
   return (
     <div className="Carousel">
       <button
-        data-cy="prev-btn"
+        data-cy="prev"
         className={cn('Carousel__btn', {
           disabled: imageIndex === 0,
         })}
@@ -71,19 +71,21 @@ const Carousel: React.FC<Props> = ({
           }}
         >
           {images.map((image, index) => (
-            <li key={index} className="Carousel__item">
-              <img
-                className="Carousel__image"
-                src={image}
-                alt={`img-${index}`}
-              />
+            <li
+              key={index}
+              style={{
+                width: `${itemWidth}px`,
+                height: `${itemWidth}px`,
+              }}
+            >
+              <img src={image} alt={`img-${index}`} />
             </li>
           ))}
         </ul>
       </div>
 
       <button
-        data-cy="next-btn"
+        data-cy="next"
         className={cn('Carousel__btn', {
           disabled: imageIndex === maxIndex,
         })}
